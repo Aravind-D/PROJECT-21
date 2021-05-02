@@ -7,7 +7,7 @@ function setup() {
 
   thickness=random(22,83);
 
-  bullet = createSprite(50, 200, 50, 10);
+  bullet = createSprite(50, 200, 30, 5);
   wall = createSprite (1200, 200, thickness, 100);
 
   speed=random(223,321);
@@ -20,7 +20,7 @@ function setup() {
 
 function draw() {
 
-  background("black");  
+  background("blue");  
 
   if (wall.x-bullet.x < (bullet.width+wall.width)/2) {
   bullet.velocityX=0;
